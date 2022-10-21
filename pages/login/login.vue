@@ -1,7 +1,9 @@
 <template>
   <view class="login_container">
-    <h1 class="login_title">欢迎回来</h1>
-    <!-- 背景中的灰色-->
+    <view class="login_title">
+      <image src="/static/login/topPet.png" mode="" class="title_img"></image>
+      <text>快来带我回家吧~</text>
+    </view>
     <view class="login_bakground">
       <view class="login_change">
         <view class="login_btn">
@@ -73,15 +75,19 @@
   flex-direction: column;
   background-color: rgba(253, 211, 0, 1);
     .login_title{
-      margin-top: 140rpx;
-      margin-bottom: 100rpx;
-      width: 100%;
-      font-size: 80rpx;
-      text-align: center;
-      font-weight: 1000;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .title_img{
+        width: 148rpx;
+        height: 178rpx;
+        padding: 0 40rpx 40rpx 0;
+      }
     }
   .login_bakground{
-    flex:1;
+    flex:3;
     background-color:#F9F9F9;
     display: flex;
     flex-direction: column;

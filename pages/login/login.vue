@@ -14,7 +14,6 @@
         </view>
       </view>
       <view class="input_view">
-        
         <!-- 手机号输入区域-->
         <view class="login_phoneNum login_input_box" >
           <i class="icon icon-shouji input_icon"></i>
@@ -22,22 +21,13 @@
           <input class="uni-input login_input" type="number" placeholder="请输入手机号" maxlength="11"/>
         </view>
         <!-- 密码输入区域-->
-          <view class="login_password login_input_box" >
-            <i class="icon icon-tianchongxing- input_icon"></i>
-            <text>密码</text>
-            <input class="uni-input login_input" type="password" placeholder="请输入密码" maxlength="11"/>
+          <view class="login_verification login_input_box" >
+
+            <input class="uni-input login_input" type="number" placeholder="请输入验证码" maxlength="6"/>
+            <button type="default" class="get_verification">获取验证码</button>
           </view>
       </view>
-          <!-- 下一区域-->
-          <view class="hanlePwd">
-            <view >
-              <switch color="#FFCC33" style="transform:scale(0.7)"/>
-              <text>记住密码</text>
-            </view>
-            <navigator url="#" class="findPwd">
-              <text>找回密码</text>
-            </navigator>
-          </view>
+
           <!-- 登录按钮-->
            <button type="primary" class="loginBtn">登录</button>
            
@@ -69,6 +59,8 @@
 
 <style lang="less">
 .login_container{
+  position: absolute;
+  bottom: 0;
   width: 750rpx;
   height: 100vh;
   display: flex;
@@ -123,6 +115,27 @@
       display: flex;
       flex-direction: column;
       align-items:center ;
+      .login_verification{
+        
+        position: relative;
+        width: 610rpx !important;
+        justify-content: flex-start !important;
+        input{
+          padding-left: 40rpx;
+        }
+        button{
+          color:gray;
+        }
+        .get_verification{
+          background-color: #FFB801;
+          color:white;
+          position: absolute;
+          right: 0;
+          border-radius: 45rpx;
+          height: 90rpx;
+          margin:0 ;
+        }
+      }
         //输入框的定位
         .login_input_box{
           margin-bottom: 40rpx;
@@ -145,20 +158,9 @@
           }
         }
       }
+     
     }
  
-//记住密码和忘记密码区域
-   .hanlePwd{
-     padding-top: 10rpx;
-     display: flex;
-     align-content: center;
-     justify-content: space-around;
-     .findPwd{
-       position: relative;
-       padding-left: 20rpx;
-       padding-top: 6rpx;
-     }
-   } 
    .loginBtn{
      margin-top: 50rpx;
      width: 534.42rpx;

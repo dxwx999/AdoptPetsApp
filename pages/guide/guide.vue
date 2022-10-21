@@ -13,7 +13,7 @@
     </view>
     <!-- 通过navigator跳转到登录页面-->
     <navigator url="/pages/login/login" class="guide_next">
-      <image src="/static/guide_next.png"></image>
+      <image src="/static/guide/next.png"></image>
     </navigator>  
   </view>
 </template>
@@ -70,7 +70,7 @@
         position: absolute;  //决定定位，这里的绝对定位是相对于html进行定位的
         width:750rpx;  //微信小程序的单位，用于移动端适配
         height: 393.75rpx;
-        background: url(/static/guide_background.png) ;
+        background: url(/static/guide/background.png) ;
         background-size:cover;
         left: 0rpx;
         bottom: 254rpx;

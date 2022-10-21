@@ -261,7 +261,7 @@ var render = function() {
           attrs: { url: "/pages/login/login", _i: 5 }
         },
         [
-          _c("v-uni-image", { attrs: { src: "/static/guide_next.png", _i: 6 } })
+          _c("v-uni-image", { attrs: { src: "/static/guide/next.png", _i: 6 } })
         ],
         1
       )
@@ -357,7 +357,7 @@ if(false) {}
 // Imports
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../HBuilderX/plugins/uniapp-cli/node_modules/css-loader/dist/runtime/api.js */ 10);
 var ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../../../../../HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/lib/app-plus/getUrl.js */ 11);
-var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module '@/static/guide_background.png'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! @/static/guide/background.png */ 39);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
 // Module
@@ -1395,46 +1395,24 @@ var render = function() {
                 "uni-view",
                 { staticClass: _vm._$g(13, "sc"), attrs: { _i: 13 } },
                 [
-                  _c("i", {
-                    staticClass: _vm._$g(14, "sc"),
-                    attrs: { _i: 14 }
-                  }),
-                  _c("v-uni-text", { attrs: { _i: 15 } }, [_vm._v("密码")]),
                   _c("v-uni-input", {
-                    staticClass: _vm._$g(16, "sc"),
+                    staticClass: _vm._$g(14, "sc"),
                     attrs: {
-                      type: "password",
-                      placeholder: "请输入密码",
-                      maxlength: "11",
-                      _i: 16
+                      type: "number",
+                      placeholder: "请输入验证码",
+                      maxlength: "6",
+                      _i: 14
                     }
-                  })
-                ],
-                1
-              )
-            ],
-            1
-          ),
-          _c(
-            "uni-view",
-            { staticClass: _vm._$g(17, "sc"), attrs: { _i: 17 } },
-            [
-              _c(
-                "uni-view",
-                { attrs: { _i: 18 } },
-                [
-                  _c("v-uni-switch", {
-                    staticStyle: { transform: "scale(0.7)" },
-                    attrs: { color: "#FFCC33", _i: 19 }
                   }),
-                  _c("v-uni-text", { attrs: { _i: 20 } }, [_vm._v("记住密码")])
+                  _c(
+                    "v-uni-button",
+                    {
+                      staticClass: _vm._$g(15, "sc"),
+                      attrs: { type: "default", _i: 15 }
+                    },
+                    [_vm._v("获取验证码")]
+                  )
                 ],
-                1
-              ),
-              _c(
-                "v-uni-navigator",
-                { staticClass: _vm._$g(21, "sc"), attrs: { url: "#", _i: 21 } },
-                [_c("v-uni-text", { attrs: { _i: 22 } }, [_vm._v("找回密码")])],
                 1
               )
             ],
@@ -1443,21 +1421,21 @@ var render = function() {
           _c(
             "v-uni-button",
             {
-              staticClass: _vm._$g(23, "sc"),
-              attrs: { type: "primary", _i: 23 }
+              staticClass: _vm._$g(16, "sc"),
+              attrs: { type: "primary", _i: 16 }
             },
             [_vm._v("登录")]
           ),
-          _c("span", { staticClass: _vm._$g(24, "sc"), attrs: { _i: 24 } }, [
+          _c("span", { staticClass: _vm._$g(17, "sc"), attrs: { _i: 17 } }, [
             _vm._v("其他登录方式")
           ]),
           _c(
             "uni-view",
-            { staticClass: _vm._$g(25, "sc"), attrs: { _i: 25 } },
+            { staticClass: _vm._$g(18, "sc"), attrs: { _i: 18 } },
             [
-              _c("i", { staticClass: _vm._$g(26, "sc"), attrs: { _i: 26 } }),
-              _c("i", { staticClass: _vm._$g(27, "sc"), attrs: { _i: 27 } }),
-              _c("i", { staticClass: _vm._$g(28, "sc"), attrs: { _i: 28 } })
+              _c("i", { staticClass: _vm._$g(19, "sc"), attrs: { _i: 19 } }),
+              _c("i", { staticClass: _vm._$g(20, "sc"), attrs: { _i: 20 } }),
+              _c("i", { staticClass: _vm._$g(21, "sc"), attrs: { _i: 21 } })
             ],
             1
           )
@@ -1557,7 +1535,7 @@ if(false) {}
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../HBuilderX/plugins/uniapp-cli/node_modules/css-loader/dist/runtime/api.js */ 10);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".login_container {\n  width: 750rpx;\n  height: 100vh;\n  display: flex;\n  flex-direction: column;\n  background-color: #fdd300;\n}\n.login_container .login_title {\n  flex: 1;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n}\n.login_container .login_title .title_img {\n  width: 148rpx;\n  height: 178rpx;\n  padding: 0 40rpx 40rpx 0;\n}\n.login_container .login_bakground {\n  flex: 3;\n  background-color: #F9F9F9;\n  display: flex;\n  flex-direction: column;\n  border-radius: 68rpx 68rpx 0 0 ;\n}\n.login_container .login_bakground .login_change {\n  padding-top: 50rpx;\n  height: 104rpx ;\n}\n.login_container .login_bakground .login_change .login_btn {\n  display: inline-block;\n  font-size: 40rpx;\n  font-weight: 600;\n  position: relative;\n  left: 38rpx;\n  top: 20rpx;\n  width: 130rpx;\n  height: 54rpx;\n  text-align: center;\n}\n.login_container .login_bakground .login_change .reg_btn {\n  display: inline-block;\n  position: relative;\n  width: 130rpx;\n  height: 34rpx;\n  top: 21rpx;\n  color: rgba(12, 12, 14, 0.5);\n  text-align: center;\n  font-size: 28rpx;\n  font-weight: 500;\n  letter-spacing: 1.4rpx;\n}\n.login_container .login_bakground .input_view {\n  display: flex;\n  flex-direction: column;\n  align-items: center ;\n}\n.login_container .login_bakground .input_view .login_input_box {\n  margin-bottom: 40rpx;\n  width: 610rpx;\n  height: 92rpx;\n  background-color: white;\n  border-radius: 45rpx;\n  line-height: 120rpx;\n  display: flex;\n  justify-content: space-around;\n  align-items: center;\n}\n.login_container .login_bakground .input_view .login_input_box .input_icon {\n  width: 50rpx;\n  height: 50rpx;\n}\n.login_container .login_bakground .input_view .login_input_box .login_input {\n  display: inline-block;\n}\n.login_container .hanlePwd {\n  padding-top: 10rpx;\n  display: flex;\n  align-content: center;\n  justify-content: space-around;\n}\n.login_container .hanlePwd .findPwd {\n  position: relative;\n  padding-left: 20rpx;\n  padding-top: 6rpx;\n}\n.login_container .loginBtn {\n  margin-top: 50rpx;\n  width: 534.42rpx;\n  height: 108.7rpx;\n  background-color: #FFB801;\n  border-radius: 18rpx;\n}\n.login_container .otherLogin {\n  opacity: 50%;\n  text-align: center;\n  margin-top: 100rpx;\n}\n.login_container .otherLogin::before,\n.login_container .otherLogin::after {\n  content: ' —— ';\n}\n.login_container .otherWay {\n  display: flex;\n  justify-content: space-around;\n  padding: 100rpx 100rpx 0 100rpx;\n}\n.login_container .otherWay i {\n  width: 80rpx;\n  height: 80rpx;\n}\n", ""]);
+exports.push([module.i, ".login_container {\n  position: absolute;\n  bottom: 0;\n  width: 750rpx;\n  height: 100vh;\n  display: flex;\n  flex-direction: column;\n  background-color: #fdd300;\n}\n.login_container .login_title {\n  flex: 1;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n}\n.login_container .login_title .title_img {\n  width: 148rpx;\n  height: 178rpx;\n  padding: 0 40rpx 40rpx 0;\n}\n.login_container .login_bakground {\n  flex: 3;\n  background-color: #F9F9F9;\n  display: flex;\n  flex-direction: column;\n  border-radius: 68rpx 68rpx 0 0 ;\n}\n.login_container .login_bakground .login_change {\n  padding-top: 50rpx;\n  height: 104rpx ;\n}\n.login_container .login_bakground .login_change .login_btn {\n  display: inline-block;\n  font-size: 40rpx;\n  font-weight: 600;\n  position: relative;\n  left: 38rpx;\n  top: 20rpx;\n  width: 130rpx;\n  height: 54rpx;\n  text-align: center;\n}\n.login_container .login_bakground .login_change .reg_btn {\n  display: inline-block;\n  position: relative;\n  width: 130rpx;\n  height: 34rpx;\n  top: 21rpx;\n  color: rgba(12, 12, 14, 0.5);\n  text-align: center;\n  font-size: 28rpx;\n  font-weight: 500;\n  letter-spacing: 1.4rpx;\n}\n.login_container .login_bakground .input_view {\n  display: flex;\n  flex-direction: column;\n  align-items: center ;\n}\n.login_container .login_bakground .input_view .login_verification {\n  position: relative;\n  width: 610rpx !important;\n  justify-content: flex-start !important;\n}\n.login_container .login_bakground .input_view .login_verification uni-input {\n  padding-left: 40rpx;\n}\n.login_container .login_bakground .input_view .login_verification uni-button {\n  color: gray;\n}\n.login_container .login_bakground .input_view .login_verification .get_verification {\n  background-color: #FFB801;\n  color: white;\n  position: absolute;\n  right: 0;\n  border-radius: 45rpx;\n  height: 90rpx;\n  margin: 0 ;\n}\n.login_container .login_bakground .input_view .login_input_box {\n  margin-bottom: 40rpx;\n  width: 610rpx;\n  height: 92rpx;\n  background-color: white;\n  border-radius: 45rpx;\n  line-height: 120rpx;\n  display: flex;\n  justify-content: space-around;\n  align-items: center;\n}\n.login_container .login_bakground .input_view .login_input_box .input_icon {\n  width: 50rpx;\n  height: 50rpx;\n}\n.login_container .login_bakground .input_view .login_input_box .login_input {\n  display: inline-block;\n}\n.login_container .loginBtn {\n  margin-top: 50rpx;\n  width: 534.42rpx;\n  height: 108.7rpx;\n  background-color: #FFB801;\n  border-radius: 18rpx;\n}\n.login_container .otherLogin {\n  opacity: 50%;\n  text-align: center;\n  margin-top: 100rpx;\n}\n.login_container .otherLogin::before,\n.login_container .otherLogin::after {\n  content: ' —— ';\n}\n.login_container .otherWay {\n  display: flex;\n  justify-content: space-around;\n  padding: 100rpx 100rpx 0 100rpx;\n}\n.login_container .otherWay i {\n  width: 80rpx;\n  height: 80rpx;\n}\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -1614,6 +1592,16 @@ exports.push([module.i, "@charset \"UTF-8\";\r\n/**\r\n * 这里是uni-app内置
 // Exports
 module.exports = exports;
 
+
+/***/ }),
+/* 39 */
+/*!*********************************************************!*\
+  !*** E:/资料/wx小程序/AdoptPets/static/guide/background.png ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/static/guide/background.png";
 
 /***/ })
 /******/ ]);

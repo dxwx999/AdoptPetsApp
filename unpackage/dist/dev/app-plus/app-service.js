@@ -512,55 +512,62 @@ var render = function() {
     "view",
     { staticClass: _vm._$s(0, "sc", "login_container"), attrs: { _i: 0 } },
     [
-      _c("h1", {
-        staticClass: _vm._$s(1, "sc", "login_title"),
-        attrs: { _i: 1 }
-      }),
       _c(
         "view",
-        { staticClass: _vm._$s(2, "sc", "login_bakground"), attrs: { _i: 2 } },
+        { staticClass: _vm._$s(1, "sc", "login_title"), attrs: { _i: 1 } },
+        [
+          _c("image", {
+            staticClass: _vm._$s(2, "sc", "title_img"),
+            attrs: { _i: 2 }
+          }),
+          _c("text")
+        ]
+      ),
+      _c(
+        "view",
+        { staticClass: _vm._$s(4, "sc", "login_bakground"), attrs: { _i: 4 } },
         [
           _c(
             "view",
-            { staticClass: _vm._$s(3, "sc", "login_change"), attrs: { _i: 3 } },
+            { staticClass: _vm._$s(5, "sc", "login_change"), attrs: { _i: 5 } },
             [
               _c("view", {
-                staticClass: _vm._$s(4, "sc", "login_btn"),
-                attrs: { _i: 4 }
+                staticClass: _vm._$s(6, "sc", "login_btn"),
+                attrs: { _i: 6 }
               }),
               _c("view", {
-                staticClass: _vm._$s(5, "sc", "reg_btn"),
-                attrs: { _i: 5 }
+                staticClass: _vm._$s(7, "sc", "reg_btn"),
+                attrs: { _i: 7 }
               })
             ]
           ),
           _c(
             "view",
-            { staticClass: _vm._$s(6, "sc", "input_view"), attrs: { _i: 6 } },
+            { staticClass: _vm._$s(8, "sc", "input_view"), attrs: { _i: 8 } },
             [
               _c(
                 "view",
                 {
                   staticClass: _vm._$s(
-                    7,
+                    9,
                     "sc",
                     "login_phoneNum login_input_box"
                   ),
-                  attrs: { _i: 7 }
+                  attrs: { _i: 9 }
                 },
                 [
                   _c("i", {
                     staticClass: _vm._$s(
-                      8,
+                      10,
                       "sc",
                       "icon icon-shouji input_icon"
                     ),
-                    attrs: { _i: 8 }
+                    attrs: { _i: 10 }
                   }),
                   _c("text"),
                   _c("input", {
-                    staticClass: _vm._$s(10, "sc", "uni-input login_input"),
-                    attrs: { _i: 10 }
+                    staticClass: _vm._$s(12, "sc", "uni-input login_input"),
+                    attrs: { _i: 12 }
                   })
                 ]
               ),
@@ -568,25 +575,25 @@ var render = function() {
                 "view",
                 {
                   staticClass: _vm._$s(
-                    11,
+                    13,
                     "sc",
                     "login_password login_input_box"
                   ),
-                  attrs: { _i: 11 }
+                  attrs: { _i: 13 }
                 },
                 [
                   _c("i", {
                     staticClass: _vm._$s(
-                      12,
+                      14,
                       "sc",
                       "icon icon-tianchongxing- input_icon"
                     ),
-                    attrs: { _i: 12 }
+                    attrs: { _i: 14 }
                   }),
                   _c("text"),
                   _c("input", {
-                    staticClass: _vm._$s(14, "sc", "uni-input login_input"),
-                    attrs: { _i: 14 }
+                    staticClass: _vm._$s(16, "sc", "uni-input login_input"),
+                    attrs: { _i: 16 }
                   })
                 ]
               )
@@ -594,42 +601,42 @@ var render = function() {
           ),
           _c(
             "view",
-            { staticClass: _vm._$s(15, "sc", "hanlePwd"), attrs: { _i: 15 } },
+            { staticClass: _vm._$s(17, "sc", "hanlePwd"), attrs: { _i: 17 } },
             [
               _c("view", [_c("switch", {}), _c("text")]),
               _c(
                 "navigator",
                 {
-                  staticClass: _vm._$s(19, "sc", "findPwd"),
-                  attrs: { _i: 19 }
+                  staticClass: _vm._$s(21, "sc", "findPwd"),
+                  attrs: { _i: 21 }
                 },
                 [_c("text")]
               )
             ]
           ),
           _c("button", {
-            staticClass: _vm._$s(21, "sc", "loginBtn"),
-            attrs: { _i: 21 }
+            staticClass: _vm._$s(23, "sc", "loginBtn"),
+            attrs: { _i: 23 }
           }),
           _c("span", {
-            staticClass: _vm._$s(22, "sc", "otherLogin"),
-            attrs: { _i: 22 }
+            staticClass: _vm._$s(24, "sc", "otherLogin"),
+            attrs: { _i: 24 }
           }),
           _c(
             "view",
-            { staticClass: _vm._$s(23, "sc", "otherWay"), attrs: { _i: 23 } },
+            { staticClass: _vm._$s(25, "sc", "otherWay"), attrs: { _i: 25 } },
             [
               _c("i", {
-                staticClass: _vm._$s(24, "sc", "icon icon-weixin"),
-                attrs: { _i: 24 }
-              }),
-              _c("i", {
-                staticClass: _vm._$s(25, "sc", "icon icon-QQ"),
-                attrs: { _i: 25 }
-              }),
-              _c("i", {
-                staticClass: _vm._$s(26, "sc", "icon icon-weibo"),
+                staticClass: _vm._$s(26, "sc", "icon icon-weixin"),
                 attrs: { _i: 26 }
+              }),
+              _c("i", {
+                staticClass: _vm._$s(27, "sc", "icon icon-QQ"),
+                attrs: { _i: 27 }
+              }),
+              _c("i", {
+                staticClass: _vm._$s(28, "sc", "icon icon-weibo"),
+                attrs: { _i: 28 }
               })
             ]
           )
@@ -664,7 +671,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _HBu
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0; //\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\nvar _default =\n{\n  data: function data() {\n    return {};\n\n\n  } };exports.default = _default;//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInVuaS1hcHA6Ly8vcGFnZXMvbG9naW4vbG9naW4udnVlIl0sIm5hbWVzIjpbImRhdGEiXSwibWFwcGluZ3MiOiJ3RkFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7O0FBRWU7QUFDYkEsTUFEYSxrQkFDTjtBQUNMLFdBQU8sRUFBUDs7O0FBR0QsR0FMWSxFIiwiZmlsZSI6IjIyLmpzIiwic291cmNlc0NvbnRlbnQiOlsiLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuXG5leHBvcnQgZGVmYXVsdCB7XG4gIGRhdGEoKSB7XG4gICAgcmV0dXJuIHtcbiAgICAgIFxuICAgIH07XG4gIH1cbn1cbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///22\n");
+eval("Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0; //\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\nvar _default =\n{\n  data: function data() {\n    return {};\n\n\n  } };exports.default = _default;//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInVuaS1hcHA6Ly8vcGFnZXMvbG9naW4vbG9naW4udnVlIl0sIm5hbWVzIjpbImRhdGEiXSwibWFwcGluZ3MiOiJ3RkFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBOztBQUVlO0FBQ2JBLE1BRGEsa0JBQ047QUFDTCxXQUFPLEVBQVA7OztBQUdELEdBTFksRSIsImZpbGUiOiIyMi5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuLy9cbi8vXG4vL1xuXG5leHBvcnQgZGVmYXVsdCB7XG4gIGRhdGEoKSB7XG4gICAgcmV0dXJuIHtcbiAgICAgIFxuICAgIH07XG4gIH1cbn1cbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///22\n");
 
 /***/ }),
 /* 23 */
